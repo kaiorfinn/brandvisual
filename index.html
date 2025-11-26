@@ -1,399 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Casino Filipino Online | Brand Kit Variants</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casino Online | Brand Kit Variants</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<style>
-    :root {
-        --cf-blue: #104CBF;
-        --cf-red: #C00005;
-        --cf-gold: #E8C55C;
+    <style>
+        :root {
+            --cf-blue: #104CBF;
+            --cf-red: #C00005;
+            --cf-gold: #E8C55C;
 
-        --white-01: #F8F9FA;
-        --white-02: #E2E6EB;
-        --white-03: #AFB6BD;
-        --white-04: #656E82;
+            --white-01: #F8F9FA;
+            --white-02: #E2E6EB;
+            --white-03: #AFB6BD;
+            --white-04: #656E82;
 
-        --dark-01: #343B67;
-        --dark-02: #273140;
-        --dark-03: #1C2636;
-        --dark-04: #11141F;
+            --dark-01: #343B67;
+            --dark-02: #273140;
+            --dark-03: #1C2636;
+            --dark-04: #11141F;
 
-        --font-primary: "Inter", sans-serif;
-        --font-header: "Fraunces", serif;
-    }
+            --font-primary: "Inter", sans-serif;
+            --font-header: "Fraunces", serif;
+        }
 
-    * { box-sizing: border-box; }
-    body {
-        margin: 0;
-        font-family: var(--font-primary);
-        background: var(--white-01);
-        color: #111827;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    /* Toggle bar */
-    .toggle-bar {
-        display: flex;
-        gap: 12px;
-        padding: 16px 24px;
-        justify-content: center;
-        background: #ffffffcc;
-        border-bottom: 1px solid #e5e7eb;
-        position: sticky;
-        top: 0;
-        z-index: 50;
-        backdrop-filter: blur(8px);
-    }
-    .toggle-btn {
-        padding: 10px 24px;
-        border-radius: 999px;
-        cursor: pointer;
-        border: 1px solid var(--cf-blue);
-        background: #fff;
-        color: var(--cf-blue);
-        font-weight: 600;
-        font-size: 0.95rem;
-        transition: .2s;
-    }
-    .toggle-btn.active {
-        background: var(--cf-blue);
-        color: white;
-        box-shadow: 0 8px 18px rgba(16, 76, 191, 0.25);
-    }
+        body {
+            margin: 0;
+            font-family: var(--font-primary);
+            background: var(--white-01);
+            color: #111827;
+        }
 
-    /* Core layout */
-    .variant { display:none; padding:36px 24px 64px; max-width:1200px; margin:auto; }
-    .variant.active { display:block; }
+        /* Toggle bar */
+        .toggle-bar {
+            display: flex;
+            gap: 12px;
+            padding: 16px 24px;
+            justify-content: center;
+            background: #ffffffcc;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(8px);
+        }
 
-    .hero {
-        background:#ffffff;
-        border-radius:24px;
-        padding:52px 40px 44px;
-        text-align:center;
-        box-shadow:0 20px 50px rgba(15,23,42,0.05);
-        border-bottom:4px solid var(--cf-blue);
-    }
+        .toggle-btn {
+            padding: 10px 24px;
+            border-radius: 999px;
+            cursor: pointer;
+            border: 1px solid var(--cf-blue);
+            background: #fff;
+            color: var(--cf-blue);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: .2s;
+        }
 
-    .hero.luxe {
-        background: radial-gradient(circle at top left,#ffffff 0,#FBF9FA 32%,#d2d9f8 75%,#043cbf 110%);
-        border-bottom-color: var(--cf-gold);
-    }
-    .hero.hybrid {
-        border-bottom-color: var(--cf-gold);
-        background: linear-gradient(180deg,#ffffff 0,#f8f9fa 40%,#dde4ff 100%);
-    }
+        .toggle-btn.active {
+            background: var(--cf-blue);
+            color: white;
+            box-shadow: 0 8px 18px rgba(16, 76, 191, 0.25);
+        }
 
-    .hero-logo {
-        height:64px;
-        margin-bottom:16px;
-        object-fit:contain;
-    }
+        /* Core layout */
+        .variant {
+            display: none;
+            padding: 36px 24px 64px;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-    h1 {
-        margin:0;
-        font-size:2.6rem;
-        font-weight:800;
-        letter-spacing:.02em;
-        font-family:var(--font-header);
-    }
-    h2, h3 { font-family:var(--font-header); }
+        .variant.active {
+            display: block;
+        }
 
-    .section { margin-top:40px; }
-    .section-title {
-        font-size:1.4rem;
-        font-weight:800;
-        color: var(--cf-blue);
-        margin-bottom:12px;
-    }
-    .section-subtitle {
-        font-size:.95rem;
-        color:#6b7280;
-        margin-bottom:20px;
-    }
+        .hero {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 52px 40px 44px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+            border-bottom: 4px solid var(--cf-blue);
+        }
 
-    .grid-2 {
-        display:grid;
-        grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
-        gap:24px;
-    }
-    .grid-3 {
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-        gap:20px;
-    }
+        .hero.luxe {
+            background: radial-gradient(circle at top left, #ffffff 0, #FBF9FA 32%, #d2d9f8 75%, #043cbf 110%);
+            border-bottom-color: var(--cf-gold);
+        }
 
-    .card {
-        background:white;
-        border-radius:18px;
-        border:1px solid #e5e7eb;
-        padding:18px;
-        box-shadow:0 12px 30px rgba(15,23,42,0.04);
-    }
-    .card.soft { background:#f9fafb; border-style:dashed; }
+        .hero.hybrid {
+            border-bottom-color: var(--cf-gold);
+            background: linear-gradient(180deg, #ffffff 0, #f8f9fa 40%, #dde4ff 100%);
+        }
 
-    /* Logo system */
-    .logo-row {
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:16px;
-        margin-top:16px;
-    }
-    .logo-box {
-        border-radius:18px;
-        padding:18px;
-        border:1px solid #e5e7eb;
-        background:white;
-        text-align:center;
-    }
-    .logo-box.bad { background:#fef2f2; border-color:#fecaca; }
+        .hero-logo {
+            height: 64px;
+            margin-bottom: 16px;
+            object-fit: contain;
+        }
 
-    .logo-tag {
-        display:inline-block;
-        margin-top:6px;
-        padding:2px 8px;
-        font-size:.75rem;
-        border-radius:999px;
-        background:#ecfdf5;
-        color:#15803d;
-    }
-    .logo-tag.bad {
-        background:#fee2e2;
-        color:#b91c1c;
-    }
+        h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: .02em;
+            font-family: var(--font-header);
+        }
 
-    .palette-grid {
-        margin-top:16px;
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:18px;
-    }
-    .swatch {
-        border:1px solid #e5e7eb;
-        border-radius:16px;
-        overflow:hidden;
-        background:white;
-        box-shadow:0 12px 28px rgba(15,23,42,0.04);
-    }
-    .swatch-color { height:100px; }
+        h2,
+        h3 {
+            font-family: var(--font-header);
+        }
 
-</style>
+        .section {
+            margin-top: 40px;
+        }
 
-<script>
-function showVariant(id){
-    document.querySelectorAll('.variant').forEach(v=>v.classList.remove('active'));
-    document.querySelector('#'+id).classList.add('active');
-    document.querySelectorAll('.toggle-btn').forEach(b=>b.classList.remove('active'));
-    document.querySelector('[data-target="'+id+'"]').classList.add('active');
-}
-</script>
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--cf-blue);
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-size: .95rem;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 24px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            border: 1px solid #e5e7eb;
+            padding: 18px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+        }
+
+        .card.soft {
+            background: #f9fafb;
+            border-style: dashed;
+        }
+
+        /* Logo system */
+        .logo-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .logo-box {
+            border-radius: 18px;
+            padding: 18px;
+            border: 1px solid #e5e7eb;
+            background: white;
+            text-align: center;
+        }
+
+        .logo-box.bad {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .logo-tag {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 2px 8px;
+            font-size: .75rem;
+            border-radius: 999px;
+            background: #ecfdf5;
+            color: #15803d;
+        }
+
+        .logo-tag.bad {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .palette-grid {
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .swatch {
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+        }
+
+        .swatch-color {
+            height: 100px;
+        }
+    </style>
+
+    <script>
+        function showVariant(id) {
+            document.querySelectorAll('.variant').forEach(v => v.classList.remove('active'));
+            document.querySelector('#' + id).classList.add('active');
+            document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-target="' + id + '"]').classList.add('active');
+        }
+    </script>
 </head>
 
 <body>
 
-<!-- Toggle -->
-<div class="toggle-bar">
-    <button class="toggle-btn active" data-target="minimal" onclick="showVariant('minimal')">Minimal (A)</button>
-    <button class="toggle-btn" data-target="luxe" onclick="showVariant('luxe')">LuxeGlass (B)</button>
-    <button class="toggle-btn" data-target="hybrid" onclick="showVariant('hybrid')">Hybrid (C)</button>
-</div>
-
-<!-- ========================= MINIMAL SECTION ========================= -->
-<div id="minimal" class="variant active">
-    <div class="hero">
-        <img src="CF Logo Main.jpeg" class="hero-logo"/>
-        <h1>Casino Filipino Online</h1>
-        <div class="hero-subtitle">Brand Kit — Minimal Version</div>
+    <!-- Toggle -->
+    <div class="toggle-bar">
+        <button class="toggle-btn active" data-target="minimal" onclick="showVariant('minimal')">Minimal (A)</button>
+        <button class="toggle-btn" data-target="luxe" onclick="showVariant('luxe')">LuxeGlass (B)</button>
+        <button class="toggle-btn" data-target="hybrid" onclick="showVariant('hybrid')">Hybrid (C)</button>
     </div>
 
-    <!-- 1. BRAND INTRO -->
-    <section class="section">
-        <div class="section-title">1. Brand Introduction</div>
-        <div class="grid-2">
-            <div class="card">
-                <h3>Mission</h3>
-                <p>Make Casino Filipino’s trusted entertainment experience accessible anywhere in the Philippines through a modern, safe, and seamless online platform.</p>
-
-                <h3 style="margin-top:16px;">Vision</h3>
-                <p>To become the most trusted digital extension of PAGCOR’s Casino Filipino brand.</p>
-            </div>
-
-            <div class="card soft">
-                <h3>Brand Personality</h3>
-                <ul class="clean">
-                    <li>Warm, Filipino, welcoming</li>
-                    <li>Clean digital clarity</li>
-                    <li>PAGCOR-grade trust</li>
-                    <li>Modern classic casino</li>
-                </ul>
-                <h3 style="margin-top:16px;">Brand Values</h3>
-                <ul class="clean">
-                    <li>Integrity & Security</li>
-                    <li>Responsible Gaming</li>
-                    <li>Accessibility & Simplicity</li>
-                    <li>Heritage & Trust</li>
-                </ul>
-            </div>
+    <!-- ========================= MINIMAL SECTION ========================= -->
+    <div id="minimal" class="variant active">
+        <div class="hero">
+            <img src="Logo Main (Mock).jpeg" class="hero-logo" />
+            <h1>Casino Online</h1>
+            <div class="hero-subtitle">Brand Kit — Minimal Version</div>
         </div>
-    </section>
 
-    <!-- 2. COLORS -->
-    <section class="section">
-        <div class="section-title">2. Color Palette</div>
-        <div class="palette-grid">
-            <div class="swatch">
-                <div class="swatch-color" style="background:#104CBF"></div>
-                <div class="swatch-info">Blue — #104CBF</div>
-            </div>
-            <div class="swatch">
-                <div class="swatch-color" style="background:#C00005"></div>
-                <div class="swatch-info">Red — #C00005</div>
-            </div>
-            <div class="swatch">
-                <div class="swatch-color" style="background:#E8C55C"></div>
-                <div class="swatch-info">Gold — #E8C55C</div>
-            </div>
-        </div>
-    </section>
+        <!-- 1. BRAND INTRO -->
+        <section class="section">
+            <div class="section-title">1. Brand Introduction</div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Mission</h3>
+                    <p>Make Casino Filipino’s trusted entertainment experience accessible anywhere in the Philippines
+                        through a modern, safe, and seamless online platform.</p>
 
-    <!-- 3. LOGO -->
-    <section class="section">
-        <div class="section-title">3. Logo System</div>
-        <div class="logo-row">
-            <div class="logo-box">
-                <img src="CF Logo Main.jpeg" style="height:48px"/>
-                <div><strong>Primary Logo</strong></div>
-                <span class="logo-tag">Correct</span>
-            </div>
-            <div class="logo-box">
-                <img src="CF Logo Main.jpeg" style="height:48px"/>
-                <div><strong>Light on Dark</strong></div>
-                <span class="logo-tag">Correct</span>
-            </div>
-            <div class="logo-box bad">
-                <img src="CF Logo Main.jpeg" style="height:48px; opacity:.4"/>
-                <div><strong>Do Not Modify</strong></div>
-                <span class="logo-tag bad">Incorrect</span>
-            </div>
-        </div>
-    </section>
+                    <h3 style="margin-top:16px;">Vision</h3>
+                    <p>To become the most trusted digital extension of PAGCOR’s Casino Filipino brand.</p>
+                </div>
 
-    <!-- 4. TYPOGRAPHY -->
-    <section class="section">
-        <div class="section-title">4. Typography</div>
-        <div class="grid-2">
-            <div class="card">
-                <h3>Fraunces (Headlines)</h3>
-                <p>Used for titles, premium headers.</p>
+                <div class="card soft">
+                    <h3>Brand Personality</h3>
+                    <ul class="clean">
+                        <li>Warm, Filipino, welcoming</li>
+                        <li>Clean digital clarity</li>
+                        <li>PAGCOR-grade trust</li>
+                        <li>Modern classic casino</li>
+                    </ul>
+                    <h3 style="margin-top:16px;">Brand Values</h3>
+                    <ul class="clean">
+                        <li>Integrity & Security</li>
+                        <li>Responsible Gaming</li>
+                        <li>Accessibility & Simplicity</li>
+                        <li>Heritage & Trust</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card soft">
-                <h3>Inter (Body)</h3>
-                <p>Used for paragraphs, details, labels.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 5. UI -->
-    <section class="section">
-        <div class="section-title">5. UI & Components</div>
-        <div class="button-row">
-            <button class="btn-sample btn-primary">Play Now</button>
-            <button class="btn-sample btn-accent">Join Raffle</button>
-            <button class="btn-sample btn-secondary">Learn More</button>
-            <button class="btn-sample btn-vip">VIP Access</button>
-        </div>
-    </section>
-
-    <!-- 6. SOCIAL -->
-    <section class="section">
-        <div class="section-title">6. Social Media Layouts</div>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Winner Template</h3>
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
+        <!-- 2. COLORS -->
+        <section class="section">
+            <div class="section-title">2. Color Palette</div>
+            <div class="palette-grid">
+                <div class="swatch">
+                    <div class="swatch-color" style="background:#104CBF"></div>
+                    <div class="swatch-info">Blue — #104CBF</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background:#C00005"></div>
+                    <div class="swatch-info">Red — #C00005</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background:#E8C55C"></div>
+                    <div class="swatch-info">Gold — #E8C55C</div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Event / Live Template</h3>
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
-            </div>
-            <div class="card">
-                <h3>Jackpot / Phone Layout</h3>
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="footer-note">Minimal Version</div>
-</div>
+        <!-- 3. LOGO -->
+        <section class="section">
+            <div class="section-title">3. Logo System</div>
+            <div class="logo-row">
+                <div class="logo-box">
+                    <img src="Logo Main (Mock).jpeg" style="height:48px" />
+                    <div><strong>Primary Logo</strong></div>
+                    <span class="logo-tag">Correct</span>
+                </div>
+                <div class="logo-box">
+                    <img src="Logo Main (Mock).jpeg" style="height:48px" />
+                    <div><strong>Light on Dark</strong></div>
+                    <span class="logo-tag">Correct</span>
+                </div>
+                <div class="logo-box bad">
+                    <img src="Logo Main (Mock).jpeg" style="height:48px; opacity:.4" />
+                    <div><strong>Do Not Modify</strong></div>
+                    <span class="logo-tag bad">Incorrect</span>
+                </div>
+            </div>
+        </section>
 
-<!-- ========================= LUXEGLASS SECTION ========================= -->
-<div id="luxe" class="variant">
-    <div class="hero luxe">
-        <img src="CF Logo Main.jpeg" class="hero-logo" style="filter:drop-shadow(0 0 10px rgba(0,0,0,0.6));"/>
-        <h1 style="color:white; text-shadow:0 0 16px rgba(0,0,0,0.5);">Casino Filipino Online</h1>
-        <div class="hero-subtitle" style="color:#e5e7eb;">Brand Kit — LuxeGlass</div>
+        <!-- 4. TYPOGRAPHY -->
+        <section class="section">
+            <div class="section-title">4. Typography</div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Fraunces (Headlines)</h3>
+                    <p>Used for titles, premium headers.</p>
+                </div>
+                <div class="card soft">
+                    <h3>Inter (Body)</h3>
+                    <p>Used for paragraphs, details, labels.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. UI -->
+        <section class="section">
+            <div class="section-title">5. UI & Components</div>
+            <div class="button-row">
+                <button class="btn-sample btn-primary">Play Now</button>
+                <button class="btn-sample btn-accent">Join Raffle</button>
+                <button class="btn-sample btn-secondary">Learn More</button>
+                <button class="btn-sample btn-vip">VIP Access</button>
+            </div>
+        </section>
+
+        <!-- 6. SOCIAL -->
+        <section class="section">
+            <div class="section-title">6. Social Media Layouts</div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Winner Template</h3>
+                    <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png"
+                        style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <h3>Event / Live Template</h3>
+                    <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <h3>Jackpot / Phone Layout</h3>
+                    <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px" />
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">Minimal Version</div>
     </div>
 
-    <section class="section">
-        <div class="section-title">1. Luxe Visual Concept</div>
-        <p>Gradient glow, frosted panels, cinematic depth.</p>
-    </section>
-
-    <section class="section">
-        <div class="section-title">2. Luxe Social Samples</div>
-        <div class="grid-3">
-            <div class="card">
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
-            </div>
-            <div class="card">
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
-            </div>
-            <div class="card">
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
-            </div>
+    <!-- ========================= LUXEGLASS SECTION ========================= -->
+    <div id="luxe" class="variant">
+        <div class="hero luxe">
+            <img src="Logo Main (Mock).jpeg" class="hero-logo" style="filter:drop-shadow(0 0 10px rgba(0,0,0,0.6));" />
+            <h1 style="color:white; text-shadow:0 0 16px rgba(0,0,0,0.5);">Casino Online</h1>
+            <div class="hero-subtitle" style="color:#e5e7eb;">Brand Kit — LuxeGlass</div>
         </div>
-    </section>
 
-    <div class="footer-note">LuxeGlass Version</div>
-</div>
+        <section class="section">
+            <div class="section-title">1. Luxe Visual Concept</div>
+            <p>Gradient glow, frosted panels, cinematic depth.</p>
+        </section>
 
-<!-- ========================= HYBRID SECTION ========================= -->
-<div id="hybrid" class="variant">
-    <div class="hero hybrid">
-        <img src="CF Logo Main.jpeg" class="hero-logo"/>
-        <h1>Casino Filipino Online</h1>
-        <div class="hero-subtitle">Brand Kit — Hybrid Version</div>
+        <section class="section">
+            <div class="section-title">2. Luxe Social Samples</div>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png"
+                        style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px" />
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">LuxeGlass Version</div>
     </div>
 
-    <section class="section">
-        <div class="section-title">1. Hybrid Concept</div>
-        <p>Mix of minimal clarity + luxe highlight accents. Best for website and everyday social media.</p>
-    </section>
-
-    <section class="section">
-        <div class="section-title">2. Hybrid Social Samples</div>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Winner Template</h3>
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
-            </div>
-            <div class="card">
-                <h3>Event / Live Template</h3>
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
-            </div>
-            <div class="card">
-                <h3>Jackpot Template</h3>
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
-            </div>
+    <!-- ========================= HYBRID SECTION ========================= -->
+    <div id="hybrid" class="variant">
+        <div class="hero hybrid">
+            <img src="Logo Main (Mock).jpeg" class="hero-logo" />
+            <h1>Casino Online</h1>
+            <div class="hero-subtitle">Brand Kit — Hybrid Version</div>
         </div>
-    </section>
 
-    <div class="footer-note">Hybrid Version</div>
-</div>
+        <section class="section">
+            <div class="section-title">1. Hybrid Concept</div>
+            <p>Mix of minimal clarity + luxe highlight accents. Best for website and everyday social media.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-title">2. Hybrid Social Samples</div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Winner Template</h3>
+                    <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png"
+                        style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <h3>Event / Live Template</h3>
+                    <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px" />
+                </div>
+                <div class="card">
+                    <h3>Jackpot Template</h3>
+                    <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px" />
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">Hybrid Version</div>
+    </div>
 
 </body>
+
 </html>
