@@ -181,6 +181,45 @@
     }
     .swatch-color { height:100px; }
 
+    /* Social placeholders */
+    .sample-visual {
+        height:220px;
+        border-radius:12px;
+        border:1px solid #e5e7eb;
+        background:linear-gradient(135deg, rgba(16,76,191,0.9), rgba(232,197,92,0.85));
+        color:white;
+        font-weight:700;
+        letter-spacing:.03em;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        box-shadow:0 16px 40px rgba(15,23,42,0.12);
+        position:relative;
+        overflow:hidden;
+    }
+    .sample-visual::after {
+        content:"";
+        position:absolute;
+        inset:0;
+        background:radial-gradient(circle at 25% 20%, rgba(255,255,255,0.28), transparent 45%),
+                   radial-gradient(circle at 80% 10%, rgba(255,255,255,0.16), transparent 40%),
+                   linear-gradient(120deg, rgba(255,255,255,0.08), transparent 50%);
+        pointer-events:none;
+        mix-blend-mode:screen;
+    }
+    .sample-label {
+        position:relative;
+        z-index:1;
+        padding:12px 16px;
+        border-radius:12px;
+        background:rgba(0,0,0,0.25);
+        backdrop-filter:blur(6px);
+        box-shadow:0 8px 18px rgba(0,0,0,0.25);
+    }
+    .sample-visual.event { background:linear-gradient(145deg, rgba(16,76,191,0.9), rgba(192,0,5,0.9)); }
+    .sample-visual.jackpot { background:linear-gradient(140deg, rgba(15,23,42,0.95), rgba(232,197,92,0.92)); }
+
 </style>
 
 <script>
@@ -205,7 +244,7 @@ function showVariant(id){
 <!-- ========================= MINIMAL SECTION ========================= -->
 <div id="minimal" class="variant active">
     <div class="hero">
-        <img src="CF Logo Main.jpeg" class="hero-logo"/>
+        <img src="CF Logo Main.jpg" class="hero-logo"/>
         <h1>Casino Filipino Online</h1>
         <div class="hero-subtitle">Brand Kit — Minimal Version</div>
     </div>
@@ -265,17 +304,17 @@ function showVariant(id){
         <div class="section-title">3. Logo System</div>
         <div class="logo-row">
             <div class="logo-box">
-                <img src="CF Logo Main.jpeg" style="height:48px"/>
+                <img src="CF Logo Main.jpg" style="height:48px"/>
                 <div><strong>Primary Logo</strong></div>
                 <span class="logo-tag">Correct</span>
             </div>
             <div class="logo-box">
-                <img src="CF Logo Main.jpeg" style="height:48px"/>
+                <img src="CF Logo Main.jpg" style="height:48px"/>
                 <div><strong>Light on Dark</strong></div>
                 <span class="logo-tag">Correct</span>
             </div>
             <div class="logo-box bad">
-                <img src="CF Logo Main.jpeg" style="height:48px; opacity:.4"/>
+                <img src="CF Logo Main.jpg" style="height:48px; opacity:.4"/>
                 <div><strong>Do Not Modify</strong></div>
                 <span class="logo-tag bad">Incorrect</span>
             </div>
@@ -314,15 +353,21 @@ function showVariant(id){
         <div class="grid-3">
             <div class="card">
                 <h3>Winner Template</h3>
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual">
+                    <span class="sample-label">Winner Announcement</span>
+                </div>
             </div>
             <div class="card">
                 <h3>Event / Live Template</h3>
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual event">
+                    <span class="sample-label">Event Broadcast</span>
+                </div>
             </div>
             <div class="card">
                 <h3>Jackpot / Phone Layout</h3>
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual jackpot">
+                    <span class="sample-label">Jackpot Teaser</span>
+                </div>
             </div>
         </div>
     </section>
@@ -333,7 +378,7 @@ function showVariant(id){
 <!-- ========================= LUXEGLASS SECTION ========================= -->
 <div id="luxe" class="variant">
     <div class="hero luxe">
-        <img src="CF Logo Main.jpeg" class="hero-logo" style="filter:drop-shadow(0 0 10px rgba(0,0,0,0.6));"/>
+        <img src="CF Logo Main.jpg" class="hero-logo" style="filter:drop-shadow(0 0 10px rgba(0,0,0,0.6));"/>
         <h1 style="color:white; text-shadow:0 0 16px rgba(0,0,0,0.5);">Casino Filipino Online</h1>
         <div class="hero-subtitle" style="color:#e5e7eb;">Brand Kit — LuxeGlass</div>
     </div>
@@ -347,13 +392,19 @@ function showVariant(id){
         <div class="section-title">2. Luxe Social Samples</div>
         <div class="grid-3">
             <div class="card">
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual">
+                    <span class="sample-label">Winner Announcement</span>
+                </div>
             </div>
             <div class="card">
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual event">
+                    <span class="sample-label">Event Broadcast</span>
+                </div>
             </div>
             <div class="card">
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual jackpot">
+                    <span class="sample-label">Jackpot Teaser</span>
+                </div>
             </div>
         </div>
     </section>
@@ -364,7 +415,7 @@ function showVariant(id){
 <!-- ========================= HYBRID SECTION ========================= -->
 <div id="hybrid" class="variant">
     <div class="hero hybrid">
-        <img src="CF Logo Main.jpeg" class="hero-logo"/>
+        <img src="CF Logo Main.jpg" class="hero-logo"/>
         <h1>Casino Filipino Online</h1>
         <div class="hero-subtitle">Brand Kit — Hybrid Version</div>
     </div>
@@ -379,15 +430,21 @@ function showVariant(id){
         <div class="grid-3">
             <div class="card">
                 <h3>Winner Template</h3>
-                <img src="A_promotional_digital_graphic_for_Casino_Filipino_.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual">
+                    <span class="sample-label">Winner Announcement</span>
+                </div>
             </div>
             <div class="card">
                 <h3>Event / Live Template</h3>
-                <img src="Gemini_Generated_Image_jlqpkyjlqpkyjlqp.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual event">
+                    <span class="sample-label">Event Broadcast</span>
+                </div>
             </div>
             <div class="card">
                 <h3>Jackpot Template</h3>
-                <img src="Gemini_Generated_Image_motne8motne8motn.png" style="width:100%; border-radius:12px"/>
+                <div class="sample-visual jackpot">
+                    <span class="sample-label">Jackpot Teaser</span>
+                </div>
             </div>
         </div>
     </section>
