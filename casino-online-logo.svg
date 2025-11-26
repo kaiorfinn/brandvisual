@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Casino Online logo</title>
+  <desc id="desc">Wordmark with blue serif lettering for Casino Online and a red underline swoosh.</desc>
+  <rect width="800" height="800" fill="white"/>
+  <g fill="#134FA2" font-family="'Times New Roman', 'Georgia', serif" font-style="italic" font-weight="700">
+    <text x="96" y="320" font-size="194">Casino</text>
+    <text x="140" y="520" font-size="194">Online</text>
+  </g>
+  <path d="M120 420c150 120 420 120 520 30" stroke="#E3282C" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
